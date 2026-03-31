@@ -20,5 +20,5 @@ Thumbs.db
 *.log
 
 # Model weights (keep best_model.pt if needed)
-*.pt
-*.pth
+# *.pt  # Commented out to allow checkpoints_gru upload
+

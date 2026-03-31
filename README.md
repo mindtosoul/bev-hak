@@ -1,7 +1,8 @@
 # BEV-HAK: Bird's Eye View Intent & Trajectory Prediction
 
-Multi-modal trajectory prediction for vulnerable road users (pedestrians and cyclists) using Social-GRU CVAE with semantic map integration.\
-!\[Multi-Pedestrian Tracking Animation]\(multi\_pedestrian\_tracking.gif null)
+Multi-modal trajectory prediction for vulnerable road users (pedestrians and cyclists) using Social-GRU CVAE with semantic map integration.
+
+![Multi-Pedestrian Tracking Animation](multi_pedestrian_tracking.gif)
 
 ## Problem Statement
 
