@@ -143,6 +143,13 @@ Both tests confirm the model learned behavioral patterns rather than memorizing 
 
 ## Visualization
 
+### Multi-Pedestrian Animation
+```bash
+python create_video.py
+```
+
+![Multi-Pedestrian Tracking Animation](multi_pedestrian_tracking.gif)
+
 ### Trajectory Prediction
 ```bash
 python visualize_preds.py
@@ -155,15 +162,7 @@ Shows 3 scenarios with:
 - Green: Ground truth future
 - Blue: CVAE predictions (top-3 modes)
 
-### Multi-Pedestrian Animation
-```bash
-python create_video.py
-```
-
-![Multi-Pedestrian Tracking Animation](multi_pedestrian_tracking.gif)
-
 ## Project Structure
-
 ```
 bev_hak/
 ├── configs/
