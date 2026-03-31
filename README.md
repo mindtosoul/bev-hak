@@ -147,21 +147,20 @@ Both tests confirm the model learned behavioral patterns rather than memorizing 
 ```bash
 python visualize_preds.py
 ```
+
+![Trajectory Prediction Visualization](visualization_3_cases.png)
+
 Shows 3 scenarios with:
 - Red: Past trajectory
 - Green: Ground truth future
 - Blue: CVAE predictions (top-3 modes)
 
-### Stress Test
-```bash
-python visualize_preds.py  # Runs stress_test() by default
-```
-Validates spatial invariance by comparing predictions on original vs transformed inputs.
-
 ### Multi-Pedestrian Animation
 ```bash
 python create_video.py
 ```
+
+![Multi-Pedestrian Tracking Animation](multi_pedestrian_tracking.gif)
 
 ## Project Structure
 
