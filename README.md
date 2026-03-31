@@ -155,7 +155,7 @@ Both tests confirm the model learned behavioral patterns rather than memorizing 
 python create_video.py
 ```
 
-!\[Multi-Pedestrian Tracking Animation]\(multi_pedestrian_tracking.gif)
+![Multi-Pedestrian Tracking Animation](multi_pedestrian_tracking.gif)
 
 ### Trajectory Prediction
 
@@ -163,7 +163,7 @@ python create_video.py
 python visualize_preds.py
 ```
 
-!\[Trajectory Prediction Visualization]\(visualization\_3\_cases.png)
+![Trajectory Prediction Visualization](visualization_3_cases.png)
 
 Shows 3 scenarios with:
 
