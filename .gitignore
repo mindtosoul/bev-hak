@@ -1,0 +1,24 @@
+# NuScenes dataset (too large to upload)
+nuscenes/
+
+# IDE/Trae files
+.trae/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter notebooks (if any)
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Model weights (keep best_model.pt if needed)
+*.pt
+*.pth

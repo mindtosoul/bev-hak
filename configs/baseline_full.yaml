@@ -1,0 +1,57 @@
+data:
+  nuscenes_root: "c:\\Users\\Aditya\\Desktop\\bev_hak\\nuscenes"
+  version: "v1.0-mini"
+  past_steps: 4
+  future_steps: 6
+  neighbor_radius: 10.0
+  max_neighbors: 15
+  agents_of_interest:
+    - "pedestrian.adult"
+    - "pedestrian.child"
+    - "pedestrian.construction_worker"
+    - "bicycle.rider"
+    - "cyclist.rider"
+  seed: 42
+  val_split: 0.2
+  train_fraction: 1.0
+
+model:
+  model_type: "social_gru"
+  input_dim: 2
+  hidden_dim: 128
+  latent_dim: 16
+  output_dim: 2
+  num_encoder_layers: 2
+  num_decoder_layers: 1
+  dropout: 0.1
+  social_pool_grid: 6
+  z_dim: 16
+  k_goal_candidates: 8
+
+training:
+  batch_size: 64
+  gradient_accumulation: 1
+  learning_rate: 0.0003
+  weight_decay: 0.01
+  epochs: 50
+  warmup_epochs: 5
+  kl_warmup_epochs: 5
+  kl_beta: 0.5
+  goal_loss_weight: 0.1
+  use_amp: true
+  gradient_checkpointing: false
+  early_stopping_patience: 15
+  save_dir: "checkpoints"
+  log_interval: 100
+  eval_interval: 500
+  num_workers: 4
+  pin_memory: true
+  lr_scheduler: "cosine"
+
+inference:
+  num_candidates: 30
+  top_k: 3
+  sampling_strategy: "cvae"
+
+device: "cuda"
+seed: 42
